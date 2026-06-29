@@ -1,0 +1,7 @@
+Release candidate notes:
+
+- Added a database migration for subscription invoices.
+- Updated OAuth session refresh handling.
+- Changed Docker deployment resources for the worker queue.
+- Added an alert for checkout payment failures.
+
