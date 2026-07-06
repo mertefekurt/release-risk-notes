@@ -1,19 +1,18 @@
 # Release Risk Notes
 
-![stack](https://img.shields.io/badge/stack-Python-7c3aed?style=flat-square) ![python](https://img.shields.io/badge/python-3.11-0891b2?style=flat-square) ![license](https://img.shields.io/badge/license-MIT-b45309?style=flat-square) ![ci](https://img.shields.io/badge/ci-GitHub%20Actions-be185d?style=flat-square)
+| Field | Value |
+| --- | --- |
+| Category | incident practice |
+| Command | `release-risk-notes` |
+| Inputs | `examples/release.txt` |
+
+Generate release risk notes and checklists from changelog or diff text. The idea is simple: give Release Risk Notes the local file or fixture, get a readable result, and decide what needs attention before the next handoff.
+
+## Cover
 
 ![Release Risk Notes cover](assets/readme-cover.svg)
 
-Generate release risk notes and checklists from changelog or diff text.
-
-## Use case
-
-- quick local checks around release planning
-- small CI jobs where a readable report is enough
-- review workflows that need deterministic output
-- examples based on `examples/release.txt`
-
-## Local setup
+## Run path
 
 ```bash
 git clone https://github.com/mertefekurt/release-risk-notes.git
@@ -21,19 +20,16 @@ cd release-risk-notes
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev]"
-```
-
-## CLI
-
-```bash
 release-risk-notes examples/release.txt
 ```
 
-## Quality check
+## Repository notes
 
-```bash
-python -m pip install -e ".[dev]"
-ruff check .
-pytest
-python -m release_risk_notes --help
+```text
+.github/        CI workflow
+examples/       sample inputs
+src/            package source
+tests/          test coverage
+.gitignore      project file
+pyproject.toml  package metadata
 ```
