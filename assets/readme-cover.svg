@@ -1,10 +1,28 @@
 <svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Release Risk Notes cover">
-  <rect width="1280" height="420" rx="28" fill="#2a1114"/>
 
-  <path d="M92 92h1096v236H92z" fill="none" stroke="#e11d48" stroke-width="10"/>
-  <path d="M92 142h1096" stroke="#e11d48" stroke-width="10"/>
-  <circle cx="130" cy="117" r="9" fill="#f97316"/><circle cx="164" cy="117" r="9" fill="#fecdd3"/><circle cx="198" cy="117" r="9" fill="#fff1f2"/>
-  <text x="132" y="225" fill="#fff1f2" font-family="Sora, ui-sans-serif, system-ui" font-size="53" font-weight="800">Release Risk Notes</text>
-  <text x="136" y="280" fill="#fecdd3" font-family="Sora, ui-sans-serif, system-ui" font-size="23">Focused CLI for release planning</text>
-  <text x="890" y="120" fill="#f97316" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">INCIDENT PRACTICE</text>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eab308" stop-opacity=".34"/>
+      <stop offset=".54" stop-color="#1b2012" stop-opacity="0"/>
+      <stop offset="1" stop-color="#65a30d" stop-opacity=".30"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="56" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .10"/></feComponentTransfer>
+      <feBlend mode="soft-light" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="420" rx="30" fill="#1b2012"/>
+  <rect width="1280" height="420" rx="30" fill="url(#g)" filter="url(#grain)"/>
+
+  <rect x="0" y="0" width="426" height="420" fill="#eab308" opacity=".18"/>
+  <path d="M102 304c116-58 246-64 360-4 114 60 246 72 410-10 152-76 260-66 328-30" stroke="#65a30d" stroke-width="14" stroke-linecap="round" opacity=".64"/>
+  <text x="92" y="166" fill="#fefce8" font-family="Sora, ui-sans-serif, system-ui" font-size="60" font-weight="850">Release Risk Notes</text>
+  <text x="96" y="226" fill="#d9f99d" font-family="Sora, ui-sans-serif, system-ui" font-size="23">Generate release risk notes and checklists from...</text>
+  <text x="96" y="286" fill="#65a30d" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="800">INCIDENT PRACTICE</text>
+
+  <path d="M810 292c54-122 132-174 234-156 52 9 92 38 132 88" fill="none" stroke="#eab308" stroke-width="14" stroke-linecap="round"/>
+  <path d="M832 224c70-50 148-62 234-34" fill="none" stroke="#65a30d" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="1038" cy="150" r="18" fill="#fefce8" opacity=".86"/>
 </svg>
