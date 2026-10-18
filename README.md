@@ -2,9 +2,11 @@
 
 ![Release Risk Notes cover](assets/readme-cover.svg)
 
-Generate release risk notes and checklists from changelog or diff text. The repo is kept small on purpose: clone it, run the sample, inspect the output, then adapt the idea.
+Generate release risk notes and checklists from changelog or diff text.
 
-## Command line
+`Python`
+
+## Start here
 
 ```bash
 git clone https://github.com/mertefekurt/release-risk-notes.git
@@ -13,7 +15,7 @@ python -m pip install -e ".[dev]"
 release-risk-notes examples/release.txt
 ```
 
-## Repository landmarks
+## Project map
 
 ```text
 .github/        CI workflow
@@ -24,6 +26,8 @@ tests/          test coverage
 pyproject.toml  package metadata
 ```
 
-## How it runs
+## Repository
 
-![Workflow diagram](assets/readme-diagram.svg)
+[Open the source on GitHub →](https://github.com/mertefekurt/release-risk-notes)
+
+[MIT License](LICENSE)
